@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>User Register Page</h2>
+<form action="/save"  method="POST">
+<pre>
+NAME:<input type="text" name="uname"/><br>
+EMAIL:<input type="text" name="email"/><br>
+PASSWORD:<input type="password" name="pwd"/><br>
+ROLES:<input type="checkbox" name="roles" />ADMIN
+	<input type="checkbox" name="roles"/>EMPLOYEE
+<input type="SUBMIT" value="ADD USER"/>
+</pre>
+</form>
+<div th:text="${message}"></div>
+</body>
+</html>
